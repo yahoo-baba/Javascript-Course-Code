@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+  <style>
+    #box {
+      background: pink;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box"></div>
+
+  <script>
+    var left = 0;
+    var topp = 0;
+
+    document.querySelector('body').addEventListener('keydown', (e) => {
+      console.clear();
+
+      switch (e.key) {
+        case "ArrowRight":
+          left = left + 5;
+          break;
+        case "ArrowLeft":
+          left = left - 5;
+          break;
+        case "ArrowDown":
+          topp = topp + 5;
+          break;
+        case "ArrowUp":
+          topp = topp - 5;
+          break;
+        default:
+          console.log("Other key pressed.");
+          break;
+      }
+      console.log("Top : " + topp);
+      // console.log("Left : " + left);
+
+      document.querySelector('#box').style.marginLeft = left + "px";
+      document.querySelector('#box').style.marginTop = topp + "px";
+    });
+  </script>
+</body>
+
+
+</html>

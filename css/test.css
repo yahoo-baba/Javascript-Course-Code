@@ -1,0 +1,17 @@
+:root {
+  --primaryColor: #393ef9;
+  --secondaryColor: #056714;
+  --size : "12px";
+}
+#header {
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: var(--primaryColor);
+}
+#product-name{
+  --primaryColor : purple;
+  height: 100px;
+  color: var(--primaryColor);
+  background: lightgray;
+  /* border-color: red; */
+}

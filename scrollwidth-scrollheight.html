@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS scrollWidth & scrollHeight</title>
+  <style>
+  body {
+    font-family: arial;
+  }
+
+  #box {
+    background: pink;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+
+  #inner-box {
+    width: 600px;
+    height: 100px;
+    background: lightgreen;
+  }
+  </style>
+</head>
+
+<body>
+  <h2>JavaScript scrollWidth & scrollHeight</h2>
+  <div id="box">
+    <div id="inner-box"></div>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, debitis? Labore unde cumque nisi dignissimos quis autem nobis ex vero nihil nostrum ratione, ab a laudantium minus cupiditate quod, non vel architecto modi id in est pariatur aut, adipisci! Distinctio quis id, dolor rerum, voluptates adipisci? Eligendi, asperiores reiciendis! Quas dicta itaque vero perferendis asperiores! Labore, omnis. Voluptatem, neque, quis? Excepturi porro explicabo deleniti, nemo iusto temporibus voluptatem, ullam delectus adipisci hic rerum dolores quos nostrum odio natus, asperiores culpa quae, quidem aut necessitatibus. Nobis esse rem dignissimos sequi, voluptas mollitia reiciendis pariatur, totam, tempora adipisci voluptate, delectus quas odio harum perspiciatis provident autem. Neque, tenetur, quo. Officiis repudiandae natus dolorem repellat quasi exercitationem delectus ad porro illo tenetur eum qui repellendus at cupiditate, molestias unde impedit assumenda deleniti corporis iusto. Reiciendis nam, odio ut corrupti modi laborum sed est molestiae vero laboriosam. Sit sed id ipsam commodi dolorum, temporibus? Rem voluptatibus maiores minima cupiditate inventore dicta sint, impedit maxime eligendi ratione autem mollitia laboriosam doloribus reprehenderit atque eius aut, saepe cumque eos temporibus! Voluptatem non est, doloribus facilis similique, soluta fugiat aliquam tenetur, culpa, eos temporibus labore officiis eius magnam. Atque corrupti praesentium esse magni debitis ipsa suscipit tenetur est neque quaerat corporis et architecto, hic facere, dolorum obcaecati numquam, expedita dolorem voluptatibus earum, molestiae? Ratione aliquid voluptates deserunt perspiciatis assumenda incidunt, quo dolorum odio eligendi quos illum porro sit excepturi. Perferendis quod amet sapiente veniam magnam suscipit voluptas quae temporibus nesciunt a laborum totam, vitae rem. Assumenda et dolores tempore. Quod ex, reiciendis error similique eligendi quo facere, perspiciatis nobis, qui fugit porro maiores nemo veritatis. Accusamus, nesciunt, non. Fugiat natus cupiditate numquam quo assumenda doloremque vel, eaque enim, unde nisi ratione veritatis quisquam optio laudantium hic aut esse ipsam eum consectetur amet atque consequuntur. Deserunt, aspernatur, repudiandae. Quos deserunt nesciunt, asperiores nostrum perferendis? Vitae porro, eveniet deserunt maxime voluptas voluptates, aspernatur fuga omnis. Vero, in dolorum dolore, repellendus eaque saepe ducimus! Pariatur amet beatae debitis, numquam, eaque autem necessitatibus inventore odio quia, tenetur doloremque! Asperiores facilis odio est sequi quidem consequatur. Natus delectus, quam vel cum nostrum tempora autem consequuntur fugit deserunt, quae, accusantium explicabo. Atque, voluptates vel, minima eum repudiandae reprehenderit rerum hic ad cupiditate ipsum fugiat provident illo sapiente beatae alias. Fugiat aut praesentium at, delectus perferendis quod dolor debitis, dolorem, recusandae reprehenderit optio sint, quos voluptates laborum alias rem? Corporis impedit totam facilis architecto excepturi, libero quis perspiciatis quia perferendis autem accusantium. Reprehenderit earum doloremque necessitatibus ab laborum sapiente velit quo dicta ratione accusamus a consequuntur eligendi, vel nobis sunt placeat temporibus provident nesciunt laudantium unde. Quam assumenda voluptates saepe adipisci harum repellat voluptatibus suscipit facere delectus quia aspernatur, quibusdam totam ad voluptas corrupti magnam similique. Ex consequuntur dicta officia adipisci dignissimos molestias impedit iusto, soluta accusantium ut dolorum, quae quidem. Explicabo nam deleniti expedita iusto quisquam aliquam asperiores, nemo cupiditate inventore! Officiis, dolor beatae blanditiis voluptatem animi nisi corporis quasi aliquam possimus soluta, ipsa optio recusandae molestiae adipisci corrupti expedita accusantium est labore repellat aspernatur dolorem, maxime nihil, ullam. Quisquam neque harum sint itaque veniam illum, molestiae error minima, assumenda, nam obcaecati cupiditate doloremque optio nihil cumque quibusdam! Odit, sint totam voluptas id amet autem deserunt animi tempore nesciunt inventore nobis, minus doloremque fugit laudantium hic harum repudiandae maxime quibusdam, repellat laboriosam necessitatibus sapiente earum provident quisquam! In accusantium quisquam iusto aperiam quam fugiat nesciunt explicabo est temporibus, optio quibusdam minima delectus, corporis, totam fuga! Voluptatem ullam repudiandae suscipit illum, aliquam hic nemo illo earum tempora nam cumque reprehenderit fuga soluta voluptates quos a veniam beatae. Error maxime repellat, et quis optio aliquid.
+  </div>
+  <script>
+  const target = document.querySelector("#box");
+
+  var scroll_width = target.scrollWidth;
+  var scroll_height = target.scrollHeight;
+
+  console.log("Scroll Width : " + scroll_width);
+  console.log("Scroll Height : " + scroll_height);
+  </script>
+</body>
+
+</html>

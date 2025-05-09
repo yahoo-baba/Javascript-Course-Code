@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS screenX & screenY</title>
+  <style>
+  #box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    background: pink;
+  }
+  </style>
+</head>
+
+<body>
+  <h2>JavaScript screenX & screenY</h2>
+  <div id="box"></div>
+  <script>
+  document.querySelector('#box').addEventListener('click', function(e) {
+    console.clear();
+
+    var x = e.screenX;
+    var y = e.screenY;
+
+    var x2 = e.clientX;
+    var y2 = e.clientY;
+
+    console.log("screenX : " + x);
+    console.log("clientX : " + x2);
+
+    console.log("screenY : " + y);
+    console.log("clientY : " + y2);
+  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS : Clipboard Events</title>
+  <style>
+    body {
+    font-family: arial;
+  }
+
+  #myinput{
+    font-size: 21px;
+    padding: 15px;
+    width: 70%;
+  }
+
+  #box{
+    background: lightgoldenrodyellow;
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+    border: 1px solid #000;
+  }
+  </style>
+</head>
+
+<body>
+  <h2>JavaScript Clipboard Events</h2>
+  <input type="text" id="myinput">
+  <div id="box" oncopy="copyfunction()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error inventore, adipisci sint fugiat nemo reprehenderit, doloribus? Laboriosam magni aliquam praesentium magnam ipsa a tempore eveniet commodi ad nobis, quaerat quo molestias illum reprehenderit non delectus similique minima consequuntur ullam sed dolor beatae perferendis nam cum. Ex adipisci sed, provident vitae iure, quod natus voluptatum ratione delectus ea error sapiente, a maxime molestias laborum sunt id recusandae! Quaerat, quia, perspiciatis.</div>
+  <script>
+  var target = document.querySelector("#myinput");
+  var box = document.querySelector("#box");
+
+  target.addEventListener('copy', function() {
+    console.clear();
+    console.log("You Copied Text.");
+    target.style.backgroundColor = "lightgreen";
+  });
+
+  target.addEventListener('cut', function() {
+    console.clear();
+    console.log("You Cut Text.");
+    target.style.backgroundColor = "pink";
+  });
+
+  target.addEventListener('paste', function() {
+    console.clear();
+    console.log("You Pasted Text.");
+    target.style.backgroundColor = "lightblue";
+  });
+
+  function copyfunction() {
+    box.style.backgroundColor = "lightgreen";
+  }
+  </script>
+</body>
+
+</html>

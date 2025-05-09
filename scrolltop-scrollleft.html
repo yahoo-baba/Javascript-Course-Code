@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>scrollTop & scrollLeft</title>
+  <style>
+  body {
+    font-family: arial;
+  }
+
+  #box {
+    background: pink;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid #000;
+  }
+
+  #inner-box {
+    background: lightgreen;
+    width: 1000px;
+    height: 150px;
+  }
+  </style>
+</head>
+
+<body>
+  <h2>JavaScript scrollTop & scrollLeft</h2>
+  <div id="box">
+    <div id="inner-box"></div>
+    Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Exercitationem quia voluptatum blanditiis, sunt odio voluptate perferendis excepturi facilis saepe, quos aperiam voluptates corporis. Ad earum cupiditate inventore tempora omnis explicabo recusandae nobis iusto ab, aspernatur aliquam tempore dolores at dolor doloremque accusamus dolore ea. Dolores, nisi nobis dolore sunt qui ex, rem ipsam, nesciunt in odio similique iusto aliquid, nostrum officiis incidunt nemo. Suscipit cum itaque amet exercitationem expedita similique voluptatum quis, obcaecati eligendi neque aliquam officia placeat quasi ducimus. Officia similique consectetur natus ab fuga quidem et delectus omnis, minus, quisquam quos quia iste rem quo! Corrupti quam iste atque tempore nam eligendi doloremque velit alias id perferendis. Non minima quisquam ut inventore, beatae id tenetur, totam esse nisi et corrupti voluptas labore officiis quibusdam eaque? Eveniet tempore cupiditate saepe aliquid atque quasi, recusandae corrupti autem laboriosam illo et in iusto delectus fuga aliquam a culpa cum, voluptatibus veniam, magni ea alias, quas aperiam modi odit. Praesentium, quos porro reiciendis fugiat officiis corporis sit! Enim labore fugiat ea maxime quas vel delectus, dolorum consequuntur esse dolor? Tempora sit velit magnam error ut, mollitia quisquam reiciendis molestiae accusantium adipisci inventore illum beatae quia doloremque! Molestias voluptatum quod libero quae magnam, autem tenetur excepturi nam, ullam consequatur, pariatur sint reiciendis doloremque deleniti distinctio voluptate blanditiis a perferendis eius non omnis ipsum illum officia, dolor. Nobis quis, omnis quos vel placeat sapiente deserunt temporibus fugiat commodi quasi repellendus iste quod, est. Facilis, placeat, aut ipsum magnam nemo nulla autem enim? Est eum velit id atque quo. Nulla, et. Repellendus minus libero dolorem qui animi tempore sunt ipsum. Porro inventore, hic? Iusto, exercitationem, dolore. Error ipsum omnis obcaecati nemo facilis voluptates hic odio itaque, sit laudantium pariatur minus dolor veritatis repellat non, eum esse nisi iure necessitatibus! Reiciendis obcaecati perferendis, harum atque dolores impedit veritatis consectetur fugiat animi unde modi, omnis illo reprehenderit temporibus quibusdam dolorum minima aliquam asperiores quos, eaque fugit voluptate doloribus nemo. Maiores earum error ex aperiam recusandae sapiente laboriosam quas quos praesentium perspiciatis voluptates, eos unde nesciunt dolore quod! Id voluptas sit, ratione impedit blanditiis doloremque aut, quae possimus maiores facilis obcaecati aliquam beatae repellendus, debitis delectus hic, perferendis explicabo corporis ex illum? Eos est deleniti voluptatem explicabo, vero aliquam ullam beatae aut debitis ducimus culpa ex aliquid voluptate, veniam laborum quasi maxime, dicta similique laboriosam minus perferendis labore ipsa delectus aperiam? Sunt quae animi magnam iste, ipsum mollitia sed, magni exercitationem maiores asperiores! Quod, voluptatem sit dignissimos architecto ipsa assumenda, impedit labore, ad fugiat expedita officia! Esse cum debitis rerum, architecto fuga, suscipit ducimus dolorem doloremque, placeat earum eius fugiat, quaerat neque. Voluptatum, voluptas saepe odio, autem at repudiandae, doloremque architecto magni nostrum expedita, officiis dignissimos reprehenderit sit provident odit doloribus cum aut eius unde officia deleniti tempora non facere. Laboriosam aspernatur reprehenderit sequi, iure quis sed magni possimus animi hic expedita quas, iusto excepturi. Alias corporis ipsum eum minima, quaerat dolores vitae est culpa sed nesciunt facilis, aliquid dolor dignissimos cum obcaecati laboriosam. Maxime, temporibus ipsam ipsum?
+  </div>
+  <script>
+  const target = document.querySelector("#box");
+  target.addEventListener('scroll', () => {
+    console.clear();
+    console.log("scrollTop : " + target.scrollTop);
+    console.log("scrollLeft : " + target.scrollLeft);
+  });
+  </script>
+</body>
+
+</html>

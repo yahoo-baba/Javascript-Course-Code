@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript</title>
+  <style>
+    .test{
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+     <li class="test">Orange</li>
+     <li>Banana</li>
+     <li class="test">Apple</li>
+     <li>Grapes</li>
+     <li class="test">Papaya</li>
+   </ul>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellat ipsum accusantium tempore fuga, sint necessitatibus deleniti debitis, commodi recusandae nesciunt. Eaque harum odio omnis nemo laborum consectetur cumque, quae architecto enim, voluptate fugiat est quos ex perferendis nostrum aperiam odit non perspiciatis, asperiores nesciunt eligendi inventore, deserunt modi sunt. Porro dolor placeat mollitia omnis inventore itaque nihil cupiditate quo quos! Ipsa laborum beatae unde tenetur, explicabo voluptatum aspernatur delectus ratione. Autem consequuntur, voluptate fugit ipsa, qui velit. Inventore commodi, minus officiis cupiditate ipsa quas unde quidem! Officia, ducimus, adipisci. Deserunt, fugiat, quasi! Velit eos dolorum nihil perferendis, porro dignissimos.</p>
+   <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit at amet ab ratione cupiditate, sequi id nihil quibusdam, laborum modi reiciendis sed, magnam sit tenetur! Laboriosam ullam repudiandae dolores dicta ipsum iusto veritatis, officia ducimus, aperiam nesciunt quo libero eaque odit necessitatibus animi, recusandae quos accusamus a nisi odio ipsam!</p>
+  <script>
+    var x = document.getElementsByClassName('test');
+    var xLength = x.length;
+    for(var i = 0; i < xLength; i++){
+      x[i].style.color="blue";
+      x[i].style.backgroundColor="pink";
+    }
+    console.log(xLength);
+
+  </script>
+</body>
+</html>

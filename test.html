@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+  <style>
+    :root {
+      --primaryColor: #393ef9;
+      --secondaryColor: #056714;
+    }
+    /*accessing and using CSS variables*/
+    #header {
+      /*Inserted the value of CSS variable with var() function*/
+      height: 100px;
+      background-color: var(--primaryColor);
+    }
+    #product-name {
+      --secondaryColor: #dd0864;
+      /*Inserted the value CSS variable with var() function*/
+      height: 100px;
+      color: var(--secondaryColor);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="header"></div>
+  <div id="product-name">Just Testing</div>
+
+  <script>
+   // const root = document.querySelector(":root");
+    // const style = getComputedStyle(root);
+    console.log("root");
+
+
+  </script>
+</body>
+
+
+</html>

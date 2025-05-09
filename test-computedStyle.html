@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    :root {
+      --primaryColor: #393ef9;
+      --secondaryColor: #056714;
+      --size : "12px";
+    }
+    #header {
+      height: 100px;
+      margin-bottom: 20px;
+      background-color: var(--primaryColor);
+    }
+    #product-name{
+     
+      height: 100px;
+      color: var(--primaryColor);
+      /* border-color: red; */
+    }
+  </style> -->
+<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+  <div id="header">dfdsfsdf</div>
+  <div id="product-name">ddsf sdfdsf</div>
+  <div id="footer" style="background-color: lightgreen;height:50px;">Footer Content</div>
+  <script>
+//https://www.w3schools.com/jsref/met_cssstyle_getpropertyvalue.asp
+
+    // Get & Set Variable value
+    // const root = document.querySelector(":root");
+    // const style = getComputedStyle(root);
+    // const primaryColor = style.getPropertyValue("--primaryColor");
+    // console.log(primaryColor);
+  //  document.documentElement.style.setProperty("--primaryColor","red");
+
+  // Get External Stylesheet or Inpage Style
+  // const element = document.getElementById("product-name");
+  // const cssObj = window.getComputedStyle(element);
+  // let myheight = cssObj.getPropertyValue("height");
+  // let myheight = cssObj.getPropertyValue("--primaryColor");
+  // let myheight = cssObj.getPropertyValue("width");
+  // console.log(myheight);
+
+  // Second way to get property value without getPropertyValue()
+  // const element = document.getElementById("product-name");
+  // const cssObj = window.getComputedStyle(element).height;
+  // console.log(cssObj);
+
+  // const element = document.getElementById("product-name");
+  // const cssObj = window.getComputedStyle(element).getPropertyValue("--primaryColor");
+  // console.log(cssObj);
+
+
+
+  // Get Inline Style Example
+  // const element2 = document.getElementById("footer");
+  // const cssObj2 = window.getComputedStyle(element2);
+  // let myheight2 = cssObj2.getPropertyValue("height");
+  // console.log(myheight2);
+
+
+  // Get property value without element targeting
+  // var declaration = document.styleSheets[0].cssRules[1].style.height;
+  // console.log(declaration)
+
+  // Set property value without element targeting
+  // var declaration = document.styleSheets[0].cssRules[0].style;
+  // var setprop = declaration.setProperty("background-color", "yellow");
+  
+
+  // var target = document.styleSheets[0].cssRules[1].style;
+  // target.setProperty("height", "300px");
+  // target.setProperty("color", "red");
+  // target.setProperty("font-size", "50px");
+  
+  
+  // document.styleSheets[0].cssRules[1].style.height = "200px";
+  // var declaration = document.styleSheets[0].cssRules[1].style.height;
+
+
+  </script>
+</body>
+</html>

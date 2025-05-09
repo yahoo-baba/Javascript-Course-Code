@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JS : CtrlKey, ShiftKey, AltKey, MetaKey</title>
+  <style>
+    #box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000;
+    background: pink;
+    margin: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- <div id="box"></div> -->
+  <input type="text" id="mytextbox">
+  <script>
+  var target = document.querySelector('#mytextbox');
+
+  target.addEventListener('keydown', function(e) {
+
+    console.clear();
+    var k;
+
+    switch (true) {
+      case e.metaKey:
+        k = "Meta Key";
+        break;
+      case e.altKey:
+        k = "Alt Key";
+        break;
+      case e.ctrlKey:
+        k = "Control Key";
+        break;
+      case e.shiftKey:
+        k = "Shift Key";
+        break;
+      default:
+        k = "Other Key Pressed";
+        break;
+    }
+
+    console.log(k);
+  });
+  </script>
+</body>
+
+</html>
